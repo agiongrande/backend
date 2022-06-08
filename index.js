@@ -1,13 +1,9 @@
-const { debug } = require('console');
 const fs = require('fs');
 const express = require('express');
 
 const app = express();
 const puerto = 8080;
 
-app.get('/',(req,res) => {
-    res.send('Hola')
-})
 
 app.listen(puerto,(error)=>{
     if (!error){
@@ -103,33 +99,22 @@ class Contenedor {
 }
 
 
-const prod1 = {
-    producto:'Vodka', 
-    precio:900, 
-    url:"http://imagen1.png"
-}
-
-const prod2 = {
-    producto:'Gancia', 
-    precio:500, 
-    url:"http://imagen2.png"
-}
-
-const prod3 = {
-    producto:'Vodka saborizado', 
-    precio:900, 
-    url:"http://imagen3.png"
-}
-
-const prod4 = {
-    producto:'Fernet menta', 
-    precio:1000, 
-    url:"http://imagen4.png"
-}
 const archivo = new Contenedor("./productos.txt");
 
+
+
 app.get('/productos',(req,res) => {
-    res.send(archivo.getAll());
+    archivo.getAll().then((productos)=>{
+        res.send(productos);
+    });
+})
+
+app.get('/productoRandom', (req,res)=>{
+    archivo.getAll().then((productos)=>{
+        let cantidad = productos.length;
+        const random =  Math.floor(Math.random() * (cantidad));
+        res.send(productos[random]);
+    });
 })
 
 
