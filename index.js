@@ -8,6 +8,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}))
 
 app.use('/api',rutas);
+app.use('/html',express.static('public'));
 
 app.listen(puerto,(error)=>{
     if (!error){
