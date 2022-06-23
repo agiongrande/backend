@@ -1,0 +1,6 @@
+{{> nav}}
+<table><tr><td>Producto</td><td>Precio</td><td>Imagen</td></tr>
+{{#each productos}}
+<tr><td>{{this.producto}}</td><td>{{this.precio}}</td><td><img src="{{this.url}}" alt="" height="200px"></td></tr>
+{{/each}}
+</table>

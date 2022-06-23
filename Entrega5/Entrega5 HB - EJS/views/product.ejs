@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="http://localhost:8080/api/">Cargar</a>
+    <a href="http://localhost:8080/api/productos">Visualizar</a>
+    <table><tr><td>Producto</td><td>Precio</td><td>Imagen</td></tr>
+        <% productos.forEach(function(producto) { %>
+            <tr><td><%=producto.producto%></td><td><%=producto.precio%></td><td><img height="200" src=<%=producto.url %>></td></tr>
+     <% }); %> 
+    </table>
+</body>
+</html>

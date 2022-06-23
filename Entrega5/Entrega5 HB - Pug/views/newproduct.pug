@@ -1,0 +1,16 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body 
+        <a href="http://localhost:8080/api/">Cargar</a>
+        <a href="http://localhost:8080/api/productos">Visualizar</a>
+        <form action ="/api/productos" method="POST">
+            p Nombre: <input type="text" name="producto">
+            p Precio: <input type="text" name="precio">
+            p URL de la imagen: <input type="text" name="url">
+            <input type="submit" value="cargar">
+        </form>

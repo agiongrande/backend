@@ -1,0 +1,23 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body 
+    <a href="http://localhost:8080/api/">Cargar</a>
+    <a href="http://localhost:8080/api/productos">Visualizar</a>
+    <table>
+        <tr>
+            <td>Producto</td>
+            <td>Precio</td>
+            <td>Imagen</td>
+        </tr>
+        each val in productos
+            <tr>
+                <td>#{val.producto}</td>
+                <td>#{val.precio}</td>
+                <td><img height=200 src="#{val.url}"></td>
+            </tr>
+    </table>
