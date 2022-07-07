@@ -2,7 +2,7 @@ const {Router} = require('express');
 const router = Router();
 const { Producto } = require('./container/product');
 const { Carrito } = require('./container/cart');
-let userAdmin = false;
+let userAdmin = true;
 noAdmin = 'Página solo disponible para administradores'
 
 const archivo = new Producto();
