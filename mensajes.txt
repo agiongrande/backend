@@ -1,1 +1,0 @@
-[{"email":"hernan@gmail.com","mensaje":"Hola qué tal?","fechayhora":"30/06/2022, 18:57:06"},{"email":"alejandro@gmail.com","mensaje":"Como estas?","fechayhora":"30/06/2022, 18:57:24"},{"email":"hernan@gmail.com","mensaje":"Bien, hacen envios a domicilio?","fechayhora":"30/06/2022, 19:04:39"}]
