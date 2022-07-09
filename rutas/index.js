@@ -46,7 +46,7 @@ router.delete('/carrito/:id/productos/:id_prod', (req,res) => {
     let idCarrito = req.params.id
     let idProducto = req.params.id_prod
     carrito.deleteProdById(idCarrito,idProducto).then((carrito)=>{    
-        if (productos == false){
+        if (carrito == false){
             res.status(500).send({ error: 'Error al eliminar un producto del carrito' });
         } else {
             res.json(carrito);
