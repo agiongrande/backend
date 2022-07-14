@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <form id="productoForm">
+        Producto: <input type="text" id='productoText' name="producto">
+        Precio: <input type="text" id='precioText' name="precio">
+        Url: <input type="text" id='urlText' name="url">
+        <input type="submit" id='btnEnviar' value="cargar">
+    </form>
+    <div id="productos"></div>
+    <div id="mensajesChat"></div>
+
+    <form id="chatForm">
+        Mail: <input type="email" id='email' name="email" required>
+        Mensaje: <input type="text" id='mensaje' name="mensaje">
+        <input type="submit" id='btnEnviar' value="Enviar">
+    </form>
+
+    <!-- Handlebars  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+
+    <!-- Socket -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./cliente.socket.js"></script>
+</body>
+</html>
