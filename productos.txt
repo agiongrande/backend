@@ -1,1 +1,0 @@
-[{"producto":"Vodka","precio":900,"url":"http://imagen1.png","id":1},{"producto":"Vodka saborizado","precio":900,"url":"http://imagen3.png","id":2},{"producto":"Fernet menta","precio":1000,"url":"http://imagen4.png","id":3}]
